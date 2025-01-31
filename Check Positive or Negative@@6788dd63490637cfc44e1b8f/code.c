@@ -9,10 +9,11 @@ else if(a < 0){
     printf("Negative");
 }
 else if( a == 0){
-    printf("Equal");
-}
-else{
     printf("Zero");
+}
+
+else{
+    printf("Equal");
 }
     return 0;
 }
