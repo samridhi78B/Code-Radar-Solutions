@@ -8,7 +8,7 @@ if(a > 0){
 else if(a < 0){
     printf("Negative");
 }
-else if( a == b){
+else if( a == 0){
     printf("Equal");
 }
 else{
