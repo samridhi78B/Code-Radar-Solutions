@@ -2,7 +2,7 @@
 int main() {
 char a;
 scanf("%c", &a);
-char c = tolower(a);
+char a = tolower(a);
 if(a){
     printf("Lowercase");
 }
