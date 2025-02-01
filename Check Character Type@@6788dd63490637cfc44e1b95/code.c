@@ -5,7 +5,7 @@ char a;
 scanf("%c", &a);
 if(isaplha(a)){
 a = toupper(a);
-if(b == 'A' || b == 'E' || b == 'I' || b == 'O' || b == 'U'){
+if(a == 'A' || a == 'E' || a == 'I' || a == 'O' || a == 'U'){
     printf("Vowel");
 }
 else{
