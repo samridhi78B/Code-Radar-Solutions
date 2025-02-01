@@ -3,11 +3,11 @@ int main() {
 char a;
 scanf("%d", &a);
 char c = tolower(a);
-if(c){
-    printf("Uppercase");
+if(a){
+    printf("Lowercase");
 }
 else{
-    printf("Lowercase");
+    printf("Uppercase");
 }
     return 0;
 }
