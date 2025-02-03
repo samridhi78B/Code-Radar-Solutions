@@ -13,7 +13,7 @@ switch(a){
     printf("30");
     break;
     case 4:
-    printf("31");
+    printf("30");
     break;
     case 5:
     printf("30");
