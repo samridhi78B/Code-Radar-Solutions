@@ -25,7 +25,7 @@ switch(a){
     printf("Sunday");
     break;
     default:
-    printf("Inavlid");
+    printf("Invalid");
 }
     return 0;
 }
