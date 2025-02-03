@@ -7,20 +7,20 @@ scanf("%c", &c);
 
 switch(c){
     case '+':
-    printf(a+b);
+    printf("%d",a+b);
     break;
-//     case '-':
-//     printf("%d", a-b);
-//     break;
-//     case '*':
-//     printf("%d", a*b);
-//     break;
-//     case '/':
-//     printf("%d", a/b);
-//     break;
-//     default:
-//     printf("error");
-// 
+    case '-':
+    printf("%d", a-b);
+    break;
+    case '*':
+    printf("%d", a*b);
+    break;
+    case '/':
+    printf("%d", a/b);
+    break;
+    default:
+    printf("error");
+
 }
 
     return 0;
