@@ -4,16 +4,16 @@ int main() {
     scanf("%c", &a);
     switch(a){
         case 'A':
-        printf("Excellent");
+        printf("Excellent\n");
         break;
         case 'B':
-        printf("Good");
+        printf("Good\n");
         break;
         case 'C':
-        printf("Average");
+        printf("Average\n");
         break;
         case 'D':
-        printf("Below Average");
+        printf("Below Average\n");
         break;
         case 'E':
         pintf("Fail");
