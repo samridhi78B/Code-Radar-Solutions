@@ -2,8 +2,7 @@
 int main() {
 int a,b;
 scanf("%d %d", &a,&b);
-int c = a**a;
-if(c%b==0){
+if(a = b**b){
     printf("Yes");
 }
 else{
