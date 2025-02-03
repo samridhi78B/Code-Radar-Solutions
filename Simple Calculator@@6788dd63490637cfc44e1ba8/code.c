@@ -22,7 +22,6 @@ switch(c){
     else{
         printf("error");
     }
-    printf("%d", a/b);
     break;
     default:
     printf("error");
