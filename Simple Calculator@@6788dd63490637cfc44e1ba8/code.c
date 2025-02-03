@@ -7,7 +7,7 @@ scanf("%c", &c);
 
 switch(c){
     case '+':
-    printf("%d+%d = %d",a,b, a+b);
+    printf(a+b);
     break;
 //     case '-':
 //     printf("%d", a-b);
