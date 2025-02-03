@@ -20,7 +20,8 @@ switch(c){
 //     break;
 //     default:
 //     printf("error");
-// }
+// 
+}
 
     return 0;
 }
