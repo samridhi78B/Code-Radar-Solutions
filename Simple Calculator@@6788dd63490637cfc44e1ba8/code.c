@@ -4,13 +4,11 @@ int a,b;
 char c;
 scanf("%d %d", &a, &b);
 scanf("%c", &c);
-if(c == '+'){
-    printf("%d", a+b);
-}
-// switch(c){
-//     case '+':
-//     printf("%d", a+b);
-//     break;
+
+switch(c){
+    case '+':
+    printf("%d+%d = %d",a,b, a+b);
+    break;
 //     case '-':
 //     printf("%d", a-b);
 //     break;
