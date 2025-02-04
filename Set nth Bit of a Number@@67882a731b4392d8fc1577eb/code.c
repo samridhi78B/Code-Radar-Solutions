@@ -2,7 +2,8 @@
 int main() {
 int number,n;
 scanf("%d %d", &number, &n);
-number = number ^ (1 << n);
-printf("%d", number);
+int a = 1 << n;
+number|= a;
+printf("%d", a);
   return 0;
 }
