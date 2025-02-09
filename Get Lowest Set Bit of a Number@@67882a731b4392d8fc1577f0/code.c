@@ -1,8 +1,11 @@
 #include <stdio.h>
 int main() {
-    int n,c;
+    int n,p=1;
     scanf("%d", &n);
-    c = n & -n;
-    printf("%d", c);
+    while((n & 1) == 0){
+        n >>= 1;
+        p++;
+    }
+    printf("%d", p);
     return 0;
 }
