@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    int n,c;
+    scanf("%d", &n);
+    int c = n & ~n;
+    printf("%d", c);
+    return 0;
+}
