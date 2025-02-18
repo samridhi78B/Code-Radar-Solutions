@@ -14,6 +14,6 @@ int main() {
         }
     }
 
-    printf("Leading zeroes: %d\n", count);
+    printf(" %d", count);
     return 0;
 }
