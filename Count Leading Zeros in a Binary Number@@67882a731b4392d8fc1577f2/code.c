@@ -1,18 +1,20 @@
 #include <stdio.h>
 
+int countLeadingZeros(unsigned int num) {
+    if (num == 0) return 32; // Special case for 0
+
+    int count = 0;
+    while ((num & (1U << 31)) == 0) { // Check MSB (Most Significant Bit)
+        count++;
+        num <<= 1; // Left shift to check next bit
+    }
+    return count;
+}
+
 int main() {
     unsigned int num = 16; // Example number
-    int count = 0;
-
-    if (num == 0) {
-        count = 32; // All bits are zero
-    } else {
-        for (count = 0; (num & (1U << 31)) == 0; count++) {
-            num <<= 1; // Shift left
-        }
-    }
-
-    printf("%d\n", count);
+    printf("%d\n", countLeadingZeros(num));
     return 0;
 }
+
 
