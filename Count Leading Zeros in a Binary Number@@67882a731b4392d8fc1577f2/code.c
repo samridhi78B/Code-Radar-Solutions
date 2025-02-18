@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
@@ -6,14 +5,14 @@ int main() {
     int count = 0;
 
     if (num == 0) {
-        count = 32; // If number is 0, all bits are zero
+        count = 32; // All bits are zero
     } else {
-        while ((num & (1U << 31)) == 0) { // Check leftmost bit
-            count++;
+        for (count = 0; (num & (1U << 31)) == 0; count++) {
             num <<= 1; // Shift left
         }
     }
 
-    printf("%d", count);
+    printf("%d\n", count);
     return 0;
 }
+
