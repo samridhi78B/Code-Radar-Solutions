@@ -14,7 +14,7 @@ int main()
     int main(){
         int start, end;
         scanf("%d %d", &start, &end);
-        for(i = start; i<= end; i++){
+        for(int i = start; i<= end; i++){
             if(prime(i)){
                 printf("%d ", i);
             }
