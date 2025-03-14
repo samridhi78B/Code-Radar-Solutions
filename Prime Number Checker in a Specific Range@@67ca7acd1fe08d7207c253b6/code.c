@@ -8,8 +8,9 @@
         if(n % i == 0){
             return 0;
         }
-        return 1;
+        
     }
+    return 1;
     int main(){
         int start, end;
         scanf("%d %d", &start, &end);
