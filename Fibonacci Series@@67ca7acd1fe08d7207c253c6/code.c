@@ -1,10 +1,10 @@
 #include <stdio.h>
 void fibonacciSeries(int c){
-    int a =0, b =1;
+    int a =0, b =1, next;
     for(int i = 1; i<=c ; i++){
         printf("%d", a);
-        c = a+b;
+        next = a+b;
         a=b;
-        b = c;
+        b = next;
     }
 }
