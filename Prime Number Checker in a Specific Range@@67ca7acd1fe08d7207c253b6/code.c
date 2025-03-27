@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-    int prime(int n);
+    int prime(int n){
     if(n < 2 ){
         return 0;
     }
@@ -9,6 +9,7 @@
             return 0;
         }
       return 1;  
+    }
     }
     
     void PrimeInRange(int a, int b){
