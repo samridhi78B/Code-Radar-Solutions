@@ -9,7 +9,7 @@ return fact;
 }
 void factorialRange(int start, int end){
    if(start > end || start < 0){
-    printf("Invalid Range");
+    printf("Invalid range");
     return;
    }
    for(int i = start; i <= end; i++){
