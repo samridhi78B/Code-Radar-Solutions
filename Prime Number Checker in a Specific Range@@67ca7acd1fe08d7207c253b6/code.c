@@ -12,7 +12,7 @@
     }
     }
     
-    void PrimeInRange(int a, int b){
+    void printPrimeInRange(int a, int b){
         for(int i = a; i <= b; i++){
             printf("%d", prime(i));
         }
