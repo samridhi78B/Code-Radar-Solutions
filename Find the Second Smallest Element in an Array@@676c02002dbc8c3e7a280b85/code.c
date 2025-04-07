@@ -14,7 +14,7 @@ int main() {
           min = arr[i];
       }
   }
-  printf("Smallest: %d\n", min);
+  printf("%d", min);
   for(int i = 0; i < n; i++){
       if(arr[i] != min &&  smin>arr[i]){
           smin= arr[i];
