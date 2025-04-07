@@ -25,7 +25,7 @@ int main() {
     if (smax == INT_MIN) {
         printf("-1\n");
     } else {
-        printf("Product of largest two: %d\n", max * smax);
+        printf("%d", max * smax);
     }
 
     return 0;
