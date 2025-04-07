@@ -1,27 +1,24 @@
 #include <stdio.h>
-void bubbleSort(int arr[], int n);
-void printArray(int arr[], int n);
 
-// Bubble Sort function
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) { // Fix: Use 'n - i - 1' for optimization
+        for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                int c = arr[j];
+                // Swap arr[j] and arr[j + 1]
+                int temp = arr[j];
                 arr[j] = arr[j + 1];
-                arr[j + 1] = c;
+                arr[j + 1] = temp;
             }
         }
     }
+}
 
-    void printArray(int arr[], int n) {
-    int i;
-    for (i = 0; i < n; i++) {
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
 }
 
-}
 
 
