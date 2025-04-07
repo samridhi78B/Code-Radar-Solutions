@@ -6,6 +6,10 @@ void bubbleSort(int arr[], int n){
                 int c = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = c;
+                printf("Sorted");
+            }
+            else{
+                printf("Not Sorted");
             }
         }
     }
@@ -17,4 +21,7 @@ int main(){
     for(int i = 0; i <= n; i++){
         scanf("%d", &arr[i]);
     }
+    bubbleSort(arr[n], n);
+    
+
 }
