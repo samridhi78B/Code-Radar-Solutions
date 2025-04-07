@@ -13,7 +13,9 @@ int main(){
         else {
             oddSum += arr[i];
         }
+        printf("%d %d", evenSum, oddSum);
     }
-    printf("%d %d", evenSum, oddSum);
+    
+
     
 }
