@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int n, evenSum= 0, oddSum = 0;
+    int n, evenCount= 0, oddCount = 0;
     scanf("%d", &n);
     int arr[n];
     for(int i =0; i<n; i++){
@@ -8,14 +8,12 @@ int main(){
     }
     for(int i =0; i<n; i++){
         if(arr[i] % 2 == 0){
-            evenSum++;
+            evenCount++;
         }
         else {
-            oddSum++;
+            oddCount++;
         }
-        printf("%d %d", evenSum, oddSum);
-    }
-    
-
-    
+        
+    } 
+    printf("%d %d", evenCount, oddCount);
 }
