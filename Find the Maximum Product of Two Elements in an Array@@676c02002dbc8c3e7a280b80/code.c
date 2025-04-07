@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <limits.h>
 
 int main() {
     int n;
@@ -10,8 +10,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int max = arr[0];
-    int smax = arr[0];
+    int max = INT_MIN, smax = INT_MIN;
+    int min = INT_MAX, smin = INT_MAX;
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > max) {
@@ -20,13 +20,24 @@ int main() {
         } else if (arr[i] > smax && arr[i] != max) {
             smax = arr[i];
         }
+
+        if (arr[i] < min) {
+            smin = min;
+            min = arr[i];
+        } else if (arr[i] < smin && arr[i] != min) {
+            smin = arr[i];
+        }
     }
 
-    if (smax == arr[0]) {
+    if ((smax == INT_MIN && smin == INT_MAX) || (n < 2)) {
         printf("-1\n");
     } else {
-        printf("%d", max * smax);
+        int prod1 = max * smax;
+        int prod2 = min * smin;
+        int result = (prod1 > prod2) ? prod1 : prod2;
+        printf("Maximum product of any two: %d\n", result);
     }
 
     return 0;
 }
+
