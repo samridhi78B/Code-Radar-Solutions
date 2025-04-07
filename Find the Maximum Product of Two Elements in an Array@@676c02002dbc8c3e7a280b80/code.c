@@ -35,7 +35,7 @@ int main() {
         int prod1 = max * smax;
         int prod2 = min * smin;
         int result = (prod1 > prod2) ? prod1 : prod2;
-        printf("Maximum product of any two: %d\n", result);
+        printf("%d", result);
     }
 
     return 0;
