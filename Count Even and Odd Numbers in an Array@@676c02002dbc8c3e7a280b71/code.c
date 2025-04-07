@@ -8,11 +8,12 @@ int main(){
     }
     for(int i =0; i<n; i++){
         if(arr[i] % 2 == 0){
-            evenSum += 2;
+            evenSum += arr[i];
         }
         else {
-            oddSum += 2;
+            oddSum += arr[i];
         }
     }
+    printf("%d %d", evenSum, oddSum);
     
 }
