@@ -9,20 +9,19 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int max = arr[0]; 
+    int max = -1;  // Start with -1 assuming no even numbers
 
-     for(int i=0;i<n;i++){
-        if(max<arr[i] && arr[i]%2==0){
-            max=arr[i];
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            if (max == -1 || arr[i] > max) {
+                max = arr[i];
+            }
         }
     }
 
-    if (max == -1) {
-        printf("-1\n");
-    } else {
-        printf("%d", max);
-    }
+    printf("%d\n", max);  // Will print -1 if no even numbers were found
 
     return 0;
 }
+
 
