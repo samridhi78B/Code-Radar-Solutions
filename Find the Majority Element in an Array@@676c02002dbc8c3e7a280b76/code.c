@@ -19,7 +19,7 @@ int main() {
         }
 
         if (count > n / 2) {
-            printf("Majority element: %d\n", arr[i]);
+            printf("%d\n", arr[i]);
             return 0;
         }
     }
