@@ -24,6 +24,6 @@ int main() {
         }
     }
 
-    printf("No majority element\n");
+    printf("-1");
     return 0;
 }
