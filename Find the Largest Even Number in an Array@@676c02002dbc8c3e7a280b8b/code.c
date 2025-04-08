@@ -13,9 +13,12 @@ for(int i = 0; i<n; i++){
         max = arr[i];
     }
 }
-if(arr[i] == max){
+if(max % 2 == 0){
     count++;
-    printf("%d", count);
+    printf("%d\n", count);
+}
+else{
+    printf("-1");
 }
 
 return 0;
