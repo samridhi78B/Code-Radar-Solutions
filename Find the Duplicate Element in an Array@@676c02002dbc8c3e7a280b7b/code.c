@@ -16,6 +16,6 @@ int main(){
         if(count == 1){
             unique++;
         }
-        printf("%d", count);
     }
+     printf("%d", count);
 }
