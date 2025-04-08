@@ -1,12 +1,11 @@
 #include <stdio.h>
-
 int main() {
     int n;
-    scanf("%d", &n);  // number of elements
+    scanf("%d", &n); 
 
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);  // read elements
+        scanf("%d", &arr[i]);  
     }
 
     for (int i = 0; i < n; i++) {
@@ -20,7 +19,7 @@ int main() {
             num = num / 10;
         }
 
-        printf("%d\n", sum);
+        printf("%d ", sum);
     }
 
     return 0;
