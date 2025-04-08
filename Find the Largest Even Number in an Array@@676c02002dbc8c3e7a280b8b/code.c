@@ -7,18 +7,12 @@ int main(){
     for(int i =0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-int max = arr[0];
-for(int i = 0; i<n; i++){
-    if(max < arr[i]){
-        max = arr[i];
+   int maxEven = -1;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0 && arr[i] > maxEven) {
+            maxEven = arr[i];
+        }
     }
-}
-if(max % 2 == 0){
-    printf("%d\n", max);
-}
-else{
-    printf("-1");
-}
-
+printf("%d", maxEven);
 return 0;
 }
