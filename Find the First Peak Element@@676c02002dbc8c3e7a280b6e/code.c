@@ -14,7 +14,7 @@ int main() {
     }
 
     if (all_same) {
-        printf("-2\n");
+        printf("-1\n");
         return 0;
     }
 
