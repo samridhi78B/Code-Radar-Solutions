@@ -1,22 +1,27 @@
 #include <stdio.h>
-void reverse(int arr[], int si, int ei){
-    for(int i = si, j = ei; i<j; i++, j++){
-        int c = arr[i];
+
+void reverse(int arr[], int si, int ei) {
+    for (int i = si, j = ei; i < j; i++, j--) {
+        int temp = arr[i];
         arr[i] = arr[j];
-        arr[j] = c;
+        arr[j] = temp;
     }
-    return;
 }
-int main(){
+
+int main() {
     int n, k;
     scanf("%d %d", &n, &k);
     int arr[n];
-    for(int i = 0; i<n; i++){
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    k = k %n;
-    reverse(arr, n,k);
-    for(int i = 0; i<n; i++){
-        printf("%d", &arr[i]);
+    k = k % n; 
+    reverse(arr, 0, n - 1);
+    reverse(arr, 0, k - 1);
+    reverse(arr, k, n - 1);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
+
+    return 0;
 }
