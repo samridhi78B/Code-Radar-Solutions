@@ -1,9 +1,7 @@
 #include <stdio.h>
 int main() {
     int arr[100], n, i, j, found = 0;
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
-    printf("%d", n);
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
