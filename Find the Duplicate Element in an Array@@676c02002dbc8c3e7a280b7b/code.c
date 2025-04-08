@@ -17,5 +17,5 @@ int main(){
             unique++;
         }
     }
-     printf("%d", count);
+     printf("%d", unique);
 }
